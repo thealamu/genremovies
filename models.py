@@ -8,13 +8,13 @@ tmg_association_table = Table('theatre_movie_genre_association', Base.metadata,
                               Column('movie_id', Integer,
                                      ForeignKey('theatre_movies.id')),
                               Column('genre_id', String,
-                                     ForeignKey('genres.name'))
+                                     ForeignKey('genres.id'))
                               )
 
 tth_association_table = Table('theatre_movie_theatre_association', Base.metadata,
                               Column('movie_id', Integer,
                                      ForeignKey('theatre_movies.id')),
-                              Column('theatre_id', String,
+                              Column('theatre_id', Integer,
                                      ForeignKey('theatres.id'))
                               )
 
@@ -22,7 +22,7 @@ amg_association_table = Table('tv_movie_genre_association', Base.metadata,
                               Column('movie_id', Integer,
                                      ForeignKey('tv_movies.id')),
                               Column('genre_id', String,
-                                     ForeignKey('genres.name'))
+                                     ForeignKey('genres.id'))
                               )
 
 
@@ -61,10 +61,14 @@ class Movie():
 class Genre(Base):
     __tablename__ = "genres"
 
-    name = Column(
-        String(32),
+    id = Column(
+        Integer,
         primary_key=True,
         nullable=False
+    )
+
+    name = Column(
+        String(32)
     )
 
     def __repr__(self):
@@ -114,8 +118,7 @@ class TheatreMovie(Movie, Base):
 
     genre_id = Column(
         String,
-        ForeignKey('genres.name'),
-        nullable=False
+        ForeignKey('genres.id')
     )
 
     # Relationships
@@ -135,8 +138,7 @@ class TvMovie(Movie, Base):
 
     genre_id = Column(
         String,
-        ForeignKey('genres.name'),
-        nullable=False
+        ForeignKey('genres.id')
     )
 
     # Relationships

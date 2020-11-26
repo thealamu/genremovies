@@ -47,7 +47,7 @@ def get_showings(api_secret, start_date, zip_code):
             if not theatre:
                 continue
             theatre_movie.theatres.append(
-                Theatre(id=theatre["id"], name=theatre["name"]))
+                Theatre(theatre_id=theatre["id"], name=theatre["name"]))
 
         theatre_movies.append(theatre_movie)
 
