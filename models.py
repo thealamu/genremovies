@@ -1,5 +1,6 @@
 from sqlalchemy import Table, ForeignKey, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
@@ -14,7 +15,7 @@ tth_association_table = Table('theatre_movie_theatre_association', Base.metadata
                               Column('movie_id', Integer,
                                      ForeignKey('theatre_movies.id')),
                               Column('theatre_id', String,
-                                     ForeignKey('theatre.id'))
+                                     ForeignKey('theatres.id'))
                               )
 
 amg_association_table = Table('tv_movie_genre_association', Base.metadata,
@@ -29,7 +30,7 @@ ttv_association_table = Table('tv_movie_channel_association', Base.metadata,
                               Column('movie_id', Integer,
                                      ForeignKey('tv_movies.id')),
                               Column('channel_id', String,
-                                     ForeignKey('channel.name'))
+                                     ForeignKey('channels.name'))
                               )
 
 
@@ -74,9 +75,13 @@ class Theatre(Base):
     __tablename__ = "theatres"
 
     id = Column(
-        String(32),
+        Integer,
         primary_key=True,
         nullable=False
+    )
+
+    theatre_id = Column(
+        String(32),
     )
 
     name = Column(
@@ -102,6 +107,40 @@ class Channel(Base):
 class TheatreMovie(Movie, Base):
     __tablename__ = "theatre_movies"
 
+    theatre_id = Column(
+        String,
+        ForeignKey("theatres.id")
+    )
+
+    genre_id = Column(
+        String,
+        ForeignKey('genres.name'),
+        nullable=False
+    )
+
+    # Relationships
+    genres = relationship("Genre", backref="theatre_movies",
+                          secondary=tmg_association_table)
+
+    theatres = relationship("Theatre", secondary=tth_association_table)
+
 
 class TvMovie(Movie, Base):
     __tablename__ = "tv_movies"
+
+    channel_id = Column(
+        String,
+        ForeignKey("channels.name")
+    )
+
+    genre_id = Column(
+        String,
+        ForeignKey('genres.name'),
+        nullable=False
+    )
+
+    # Relationships
+    genres = relationship("Genre", backref="tv_movies",
+                          secondary=amg_association_table)
+
+    channels = relationship("Channel", secondary=ttv_association_table)

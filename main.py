@@ -8,11 +8,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import *
 
-
 SHOWINGS_ENDPOINT_FMT = "https://data.tmsapi.com/v1.1/movies/showings?startDate={0}&zip={1}&api_key={2}"
 AIRINGS_ENDPOINT_FMT = "http://data.tmsapi.com/v1.1/movies/airings?startDateTime={0}&lineupId={1}&api_key={2}"
 
 session = requests.Session()
+dbSession = None
 
 
 def do_endpoint_mock():
@@ -29,7 +29,30 @@ def do_endpoint_mock():
 def get_showings(api_secret, start_date, zip_code):
     resp = session.get("mock://test.com/showings")
     showings = json.loads(resp.text)
-    print(len(showings))
+
+    theatre_movies = []
+
+    for showing in showings:
+        theatre_movie = TheatreMovie()
+        theatre_movie.title = showing.get("title", "")
+        theatre_movie.releaseYear = showing.get("releaseYear", "")
+        theatre_movie.description = showing.get("shortDescription")
+        theatre_movie.genres = []
+        for genre_name in showing.get("genres", []):
+            theatre_movie.genres.append(Genre(name=genre_name))
+
+        theatre_movie.theatres = []
+        for showtime in showing.get("showtimes", []):
+            theatre = showtime.get("theatre", None)
+            if not theatre:
+                continue
+            theatre_movie.theatres.append(
+                Theatre(id=theatre["id"], name=theatre["name"]))
+
+        theatre_movies.append(theatre_movie)
+
+    dbSession.add_all(theatre_movies)
+    dbSession.commit()
 
 
 def get_airings(api_secret, start_datetime, line_up_id):
@@ -50,6 +73,9 @@ if __name__ == '__main__':
 
     # Create All Tables
     Base.metadata.create_all(engine)
+
+    Session = sessionmaker(bind=engine)
+    dbSession = Session()
 
     do_endpoint_mock()
     get_data()
