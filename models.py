@@ -4,34 +4,34 @@ from sqlalchemy.orm import relationship
 
 Base = declarative_base()
 
-tmg_association_table = Table('theatre_movie_genre_association', Base.metadata,
-                              Column('movie_id', Integer,
-                                     ForeignKey('theatre_movies.id')),
-                              Column('genre_id', Integer,
-                                     ForeignKey('genres.id'))
-                              )
+thmg_association_table = Table('theatre_movie_genre_association', Base.metadata,
+                               Column('movie_id', Integer,
+                                      ForeignKey('theatre_movies.id')),
+                               Column('genre_id', Integer,
+                                      ForeignKey('genres.id'))
+                               )
 
-tth_association_table = Table('theatre_movie_theatre_association', Base.metadata,
-                              Column('movie_id', Integer,
-                                     ForeignKey('theatre_movies.id')),
-                              Column('theatre_id', Integer,
-                                     ForeignKey('theatres.id'))
-                              )
+thth_association_table = Table('theatre_movie_theatre_association', Base.metadata,
+                               Column('movie_id', Integer,
+                                      ForeignKey('theatre_movies.id')),
+                               Column('theatre_id', Integer,
+                                      ForeignKey('theatres.id'))
+                               )
 
-amg_association_table = Table('tv_movie_genre_association', Base.metadata,
-                              Column('movie_id', Integer,
-                                     ForeignKey('tv_movies.id')),
-                              Column('genre_id', Integer,
-                                     ForeignKey('genres.id'))
-                              )
+tvmg_association_table = Table('tv_movie_genre_association', Base.metadata,
+                               Column('movie_id', Integer,
+                                      ForeignKey('tv_movies.id')),
+                               Column('genre_id', Integer,
+                                      ForeignKey('genres.id'))
+                               )
 
 
-ttv_association_table = Table('tv_movie_channel_association', Base.metadata,
-                              Column('movie_id', Integer,
-                                     ForeignKey('tv_movies.id')),
-                              Column('channel_id', Integer,
-                                     ForeignKey('channels.id'))
-                              )
+tvch_association_table = Table('tv_movie_channel_association', Base.metadata,
+                               Column('movie_id', Integer,
+                                      ForeignKey('tv_movies.id')),
+                               Column('channel_id', Integer,
+                                      ForeignKey('channels.id'))
+                               )
 
 
 class Movie():
@@ -115,38 +115,18 @@ class Channel(Base):
 class TheatreMovie(Movie, Base):
     __tablename__ = "theatre_movies"
 
-    theatre_id = Column(
-        Integer,
-        ForeignKey("theatres.id")
-    )
-
-    genre_id = Column(
-        Integer,
-        ForeignKey('genres.id')
-    )
-
     # Relationships
     genres = relationship("Genre", backref="theatre_movies",
-                          secondary=tmg_association_table)
+                          secondary=thmg_association_table)
 
-    theatres = relationship("Theatre", secondary=tth_association_table)
+    theatres = relationship("Theatre", secondary=thth_association_table)
 
 
 class TvMovie(Movie, Base):
     __tablename__ = "tv_movies"
 
-    channel_id = Column(
-        Integer,
-        ForeignKey("channels.id")
-    )
-
-    genre_id = Column(
-        Integer,
-        ForeignKey('genres.id')
-    )
-
     # Relationships
     genres = relationship("Genre", backref="tv_movies",
-                          secondary=amg_association_table)
+                          secondary=tvmg_association_table)
 
-    channels = relationship("Channel", secondary=ttv_association_table)
+    channels = relationship("Channel", secondary=tvch_association_table)
