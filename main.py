@@ -2,7 +2,6 @@
 import json
 import datetime
 import requests
-import requests_mock
 from os import environ
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
@@ -24,17 +23,6 @@ Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind=engine)
 dbSession = Session()
-
-
-def do_endpoint_mock():
-    adapter = requests_mock.Adapter()
-    session.mount('mock://', adapter)
-
-    adapter.register_uri("GET", "mock://test.com/showings",
-                         text=open("./mock/showings.json", "r").read())
-
-    adapter.register_uri("GET", "mock://test.com/airings",
-                         text=open("./mock/airings.json", "r").read())
 
 
 def get_genre_or_create(genre_name):
