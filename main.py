@@ -84,9 +84,10 @@ def get_airings(api_secret, start_datetime, line_up_id):
             tv_movie.genres.append(Genre(name=genre_name))
 
         tv_movie.channels = []
-        for channel_name in program.get("channels", []):
+        for channel_name in airing.get("channels", []):
             tv_movie.channels.append(Channel(name=channel_name))
 
+        print(tv_movie.channels)
         tv_movies.append(tv_movie)
 
     dbSession.add_all(tv_movies)
@@ -107,10 +108,14 @@ def get_date_time():
     return datetime.datetime.now().strftime("%Y-%m-%dT%H:%Mz")
 
 
+def get_top_genres():
+    pass
+
+
 if __name__ == '__main__':
     # Create engine
     db_uri = environ.get('SQLALCHEMY_DATABASE_URI')
-    engine = create_engine(db_uri, echo=True)
+    engine = create_engine(db_uri, echo=False)
 
     # Create All Tables
     Base.metadata.create_all(engine)
