@@ -9,11 +9,21 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import *
 
+
 SHOWINGS_ENDPOINT_FMT = "https://data.tmsapi.com/v1.1/movies/showings?startDate={0}&zip={1}&api_key={2}"
 AIRINGS_ENDPOINT_FMT = "http://data.tmsapi.com/v1.1/movies/airings?startDateTime={0}&lineupId={1}&api_key={2}"
 
 session = requests.Session()
-dbSession = None
+
+# Create engine
+db_uri = environ.get('SQLALCHEMY_DATABASE_URI')
+engine = create_engine(db_uri, echo=False)
+
+# Create All Tables
+Base.metadata.create_all(engine)
+
+Session = sessionmaker(bind=engine)
+dbSession = Session()
 
 
 def do_endpoint_mock():
@@ -44,7 +54,7 @@ def get_showings(api_secret, start_date, zip_code):
         theatre_movie.description = showing.get("shortDescription", "")
         theatre_movie.genres = []
         for genre_name in showing.get("genres", []):
-            theatre_movie.genres.append(Genre(name=genre_name))
+            theatre_movie.genres.append(get_genre(genre_name))
 
         theatre_movie.theatres = []
         for showtime in showing.get("showtimes", []):
@@ -81,7 +91,7 @@ def get_airings(api_secret, start_datetime, line_up_id):
         tv_movie.description = program.get("shortDescription", "")
         tv_movie.genres = []
         for genre_name in program.get("genres", []):
-            tv_movie.genres.append(Genre(name=genre_name))
+            tv_movie.genres.append(get_genre(genre_name))
 
         tv_movie.channels = []
         for channel_name in airing.get("channels", []):
@@ -124,15 +134,5 @@ def get_top_genres():
 
 
 if __name__ == '__main__':
-    # Create engine
-    db_uri = environ.get('SQLALCHEMY_DATABASE_URI')
-    engine = create_engine(db_uri, echo=False)
-
-    # Create All Tables
-    Base.metadata.create_all(engine)
-
-    Session = sessionmaker(bind=engine)
-    dbSession = Session()
-
-    # get_data()
+    get_data()
     get_top_genres()
