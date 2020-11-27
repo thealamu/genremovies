@@ -109,7 +109,18 @@ def get_date_time():
 
 
 def get_top_genres():
-    pass
+    # get all genres
+    genres = dbSession.query(Genre.name).distinct(
+        Genre.name).all()
+
+    for genre in genres:
+        genre_name = genre[0]
+        print(genre_name)
+        # theatre movie ids for genre
+        theatre_movie_ids_for_genre = dbSession.query(
+            tmg_association_table).all()
+        print(len(theatre_movie_ids_for_genre))
+        break
 
 
 if __name__ == '__main__':
@@ -123,5 +134,5 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     dbSession = Session()
 
-    do_endpoint_mock()
-    get_data()
+    # get_data()
+    get_top_genres()
