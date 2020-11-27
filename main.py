@@ -17,7 +17,7 @@ session = requests.Session()
 
 # Create engine
 db_uri = environ.get('SQLALCHEMY_DATABASE_URI')
-engine = create_engine(db_uri, echo=False)
+engine = create_engine(db_uri, echo=True)
 
 # Create All Tables
 Base.metadata.create_all(engine)
@@ -69,7 +69,7 @@ def get_showings(api_secret, start_date, zip_code):
         # add this movie to genres using backrefs
         for genre_name in showing.get("genres", []):
             # get a reference to the genre
-            genre = dbSession.query(Genre).filter(Genre.name=genre_name)
+            genre = get_genre_or_create(genre_name)
             genre.theatre_movies.append(theatre_movie)
 
         theatre_movie.theatres = []
@@ -89,6 +89,7 @@ def get_showings(api_secret, start_date, zip_code):
 def get_airings(api_secret, start_datetime, line_up_id):
     endpoint = AIRINGS_ENDPOINT_FMT.format(
         start_datetime, line_up_id, api_secret)
+
     resp = session.get(endpoint)
     if not resp.ok:
         raise Exception(resp.text)
@@ -102,18 +103,20 @@ def get_airings(api_secret, start_datetime, line_up_id):
         program = airing.get("program", None)
         if not program:
             continue
+
         tv_movie.title = program.get("title", "")
         tv_movie.releaseYear = program.get("releaseYear", "")
         tv_movie.description = program.get("shortDescription", "")
-        tv_movie.genres = []
+
+        # add tv_movie to genres using backrefs
         for genre_name in program.get("genres", []):
-            tv_movie.genres.append(get_genre(genre_name))
+            genre = get_genre_or_create(genre_name)
+            genre.tv_movies.append(tv_movie)
 
         tv_movie.channels = []
         for channel_name in airing.get("channels", []):
             tv_movie.channels.append(Channel(name=channel_name))
 
-        print(tv_movie.channels)
         tv_movies.append(tv_movie)
 
     dbSession.add_all(tv_movies)
@@ -136,16 +139,11 @@ def get_date_time():
 
 def get_top_genres():
     # get all genres
-    genres = dbSession.query(Genre.name).distinct(
-        Genre.name).all()
+    genres = dbSession.query(Genre).all()
 
     for genre in genres:
-        genre_name = genre[0]
-        print(genre_name)
-        # theatre movie ids for genre
-        theatre_movie_ids_for_genre = dbSession.query(
-            tmg_association_table).all()
-        print(len(theatre_movie_ids_for_genre))
+        print(genre)
+        print(genre.theatre_movies)
         break
 
 

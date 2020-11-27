@@ -55,7 +55,7 @@ class Movie():
     )
 
     def __repr__(self):
-        return "(%s, %s)" % self.title, self.releaseYear
+        return "{0}, {1}".format(self.title, self.releaseYear)
 
 
 class Genre(Base):
