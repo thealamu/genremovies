@@ -1,0 +1,1211 @@
+[
+  {
+    "tmsId": "MV012010760000",
+    "rootId": "16126280",
+    "subType": "Feature Film",
+    "title": "The Croods: A New Age",
+    "releaseYear": 2020,
+    "releaseDate": "2020-11-25",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy", "Adventure", "Animated", "Children"],
+    "audience": "Children",
+    "longDescription": "Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs. Unfortunately, they must also learn to live with the Bettermans -- a family that's a couple of steps above the Croods on the evolutionary ladder. As tensions between the new neighbors start to rise, a new threat soon propels both clans on an epic adventure that forces them to embrace their differences, draw strength from one another, and survive together.",
+    "shortDescription": "The prehistoric Crood family must learn to live with an advanced clan in an idyllic paradise.",
+    "topCast": ["Nicolas Cage", "Emma Stone", "Ryan Reynolds"],
+    "directors": ["Joel Crawford"],
+    "officialUrl": "https://www.universalpictures.com/movies/the-croods-2",
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG" }
+    ],
+    "advisories": ["Adult Situations"],
+    "runTime": "PT01H35M",
+    "animation": "Animated",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p16126280_v_v5_ab.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T17:30",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T18:00",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T12:30",
+        "quals": "Closed Captioned|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T13:00",
+        "quals": "Closed Captioned|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T13:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T14:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Dolby Cinema at AMC Prime|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T15:30",
+        "quals": "Closed Captioned|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T16:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T16:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Dolby Cinema at AMC Prime|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T18:00",
+        "quals": "Closed Captioned|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T18:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T19:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Dolby Cinema at AMC Prime|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T20:30",
+        "quals": "Closed Captioned|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=191154&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T14:00",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T14:30",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T15:00",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T16:30",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T17:00",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T17:30",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T19:10",
+        "quals": "Descriptive Audio Services|Hearing Impaired|No Passes",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T19:40",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T20:10",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T21:45",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T22:15",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV000282330000",
+    "rootId": "12007",
+    "subType": "Feature Film",
+    "title": "National Lampoon's Christmas Vacation",
+    "releaseYear": 1989,
+    "releaseDate": "1989-12-01",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy", "Holiday"],
+    "longDescription": "As the holidays approach, Clark Griswold (Chevy Chase) wants to have a perfect family Christmas, so he pesters his wife, Ellen (Beverly D'Angelo), and children, as he tries to make sure everything is in line, including the tree and house decorations. However, things go awry quickly. His hick cousin, Eddie (Randy Quaid), and his family show up unplanned and start living in their camper on the Griswold property. Even worse, Clark's employers renege on the holiday bonus he needs.",
+    "shortDescription": "The Griswolds (Chevy Chase, Beverly D'Angelo) spend the holiday in a garish way.",
+    "topCast": ["Chevy Chase", "Beverly D'Angelo", "Randy Quaid"],
+    "directors": ["Jeremiah S. Chechik"],
+    "qualityRating": { "ratingsBody": "TMS", "value": "3" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG-13" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H37M",
+    "holiday": "Christmas",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p12007_v_v5_ac.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T17:45",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV013618560000",
+    "rootId": "17758177",
+    "subType": "Feature Film",
+    "title": "Tenet",
+    "releaseYear": 2020,
+    "releaseDate": "2020-08-26",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Action", "Science fiction", "Thriller"],
+    "longDescription": "A secret agent embarks on a dangerous, time-bending mission to prevent the start of World War III.",
+    "shortDescription": "A secret agent embarks on a dangerous, time-bending mission to prevent the start of World War III.",
+    "topCast": [
+      "John David Washington",
+      "Robert Pattinson",
+      "Elizabeth Debicki"
+    ],
+    "directors": ["Christopher Nolan"],
+    "officialUrl": "https://www.tenetfilm.com/",
+    "qualityRating": { "ratingsBody": "TMS", "value": "3" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG-13" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT02H30M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p17758177_v_v5_ab.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T18:15",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T12:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=203875&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T15:40",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=203875&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T19:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=203875&d=2020-11-26"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV001396200000",
+    "rootId": "32828",
+    "subType": "Feature Film",
+    "title": "Elf",
+    "releaseYear": 2003,
+    "releaseDate": "2003-11-07",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy", "Fantasy", "Children", "Holiday"],
+    "audience": "Children",
+    "longDescription": "Buddy (Will Ferrell) was accidentally transported to the North Pole as a toddler and raised to adulthood among Santa's elves. Unable to shake the feeling that he doesn't fit in, the adult Buddy travels to New York, in full elf uniform, in search of his real father. As it happens, this is Walter Hobbs (James Caan), a cynical businessman. After a DNA test proves this, Walter reluctantly attempts to start a relationship with the childlike Buddy with increasingly chaotic results.",
+    "shortDescription": "A man (Will Ferrell) leaves Santa's workshop to search for his family.",
+    "topCast": ["Will Ferrell", "James Caan", "Bob Newhart"],
+    "directors": ["Jon Favreau"],
+    "officialUrl": "http://www.newline.com",
+    "qualityRating": { "ratingsBody": "TMS", "value": "3" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H37M",
+    "holiday": "Christmas",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p32828_v_v5_ac.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T18:20",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T14:20",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T19:30",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T22:30",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV000368390000",
+    "rootId": "14812",
+    "subType": "Feature Film",
+    "title": "Jurassic Park",
+    "releaseYear": 1993,
+    "releaseDate": "1993-06-09",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Adventure", "Action", "Science fiction", "Thriller"],
+    "longDescription": "In Steven Spielberg's massive blockbuster, paleontologists Alan Grant (Sam Neill) and Ellie Sattler (Laura Dern) and mathematician Ian Malcolm (Jeff Goldblum) are among a select group chosen to tour an island theme park populated by dinosaurs created from prehistoric DNA. While the park's mastermind, billionaire John Hammond (Richard Attenborough), assures everyone that the facility is safe, they find out otherwise when various ferocious predators break free and go on the hunt.",
+    "shortDescription": "Scientists (Sam Neill, Laura Dern, Jeff Goldblum) visit a park of DNA-regenerated dinosaurs.",
+    "topCast": ["Sam Neill", "Laura Dern", "Jeff Goldblum"],
+    "directors": ["Steven Spielberg"],
+    "officialUrl": "http://www.jurassicpark.com",
+    "qualityRating": { "ratingsBody": "TMS", "value": "3.5" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG-13" }
+    ],
+    "advisories": ["Adult Situations", "Violence"],
+    "runTime": "PT02H06M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p14812_v_v5_ak.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T18:30",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T14:40",
+        "quals": "Hearing Impaired|Descriptive Audio Services|Flashback",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T21:30",
+        "quals": "Hearing Impaired|Descriptive Audio Services|Flashback",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV015238460000",
+    "rootId": "18858963",
+    "subType": "Feature Film",
+    "title": "Mank",
+    "releaseYear": 2020,
+    "releaseDate": "2020-11-13",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Biography", "Drama"],
+    "longDescription": "1930s Hollywood is reevaluated through the eyes of scathing wit and alcoholic screenwriter Herman J. Mankiewicz as he races to finish \"Citizen Kane.\"",
+    "shortDescription": "Alcoholic screenwriter Herman J. Mankiewicz races to finish \"Citizen Kane.\"",
+    "topCast": ["Gary Oldman", "Amanda Seyfried", "Lily Collins"],
+    "directors": ["David Fincher"],
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "R" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT02H12M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": { "content": "Mank (2020)", "lang": "en" },
+      "uri": "assets/p18858963_p_v5_ab.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T18:40",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV000131200000",
+    "rootId": "6751",
+    "subType": "Feature Film",
+    "title": "Planes, Trains and Automobiles",
+    "releaseYear": 1987,
+    "releaseDate": "1987-11-27",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy", "Holiday"],
+    "longDescription": "Easily excitable Neal Page (Steve Martin) is somewhat of a control freak. Trying to get home to Chicago to spend Thanksgiving with his wife (Laila Robins) and kids, his flight is rerouted to a distant city in Kansas because of a freak snowstorm, and his sanity begins to fray. Worse yet, he is forced to bunk up with talkative Del Griffith (John Candy), whom he finds extremely annoying. Together they must overcome the insanity of holiday travel to reach their intended destination.",
+    "shortDescription": "A stranded ad exec (Steve Martin) and a salesman (John Candy) make unlikely co-travelers.",
+    "topCast": ["Steve Martin", "John Candy", "Laila Robins"],
+    "directors": ["John Hughes"],
+    "qualityRating": { "ratingsBody": "TMS", "value": "3.5" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "R" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H32M",
+    "holiday": "Thanksgiving",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p6751_v_v5_bc.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T19:00",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV014519930000",
+    "rootId": "18785508",
+    "subType": "Feature Film",
+    "title": "Freaky",
+    "releaseYear": 2020,
+    "releaseDate": "2020-11-13",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Horror", "Comedy"],
+    "longDescription": "Seventeen-year-old Millie Kessler spends her days trying to survive high school and the cruel actions of the popular crowd. But when she becomes the latest target of the Butcher, the town's infamous serial killer, her senior year becomes the least of her worries. When the Butcher's mystical dagger causes him and Millie to magically switch bodies, the frightened teen learns she has just 24 hours to get her identity back before she looks like a middle-aged maniac forever.",
+    "shortDescription": "A mystical dagger causes a serial killer to magically switch bodies with a 17-year-old girl.",
+    "topCast": ["Vince Vaughn", "Kathryn Newton", "Katie Finneran"],
+    "directors": ["Christopher Landon"],
+    "officialUrl": "https://www.universalpictures.com/movies/freaky",
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "R" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations", "Graphic Violence"],
+    "runTime": "PT01H41M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p18785508_v_v5_aa.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5084", "name": "Alamo Drafthouse South Lamar" },
+        "dateTime": "2020-11-26T19:15",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T14:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=206779&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T17:20",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=206779&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T20:25",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=206779&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T14:05",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T16:40",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T19:15",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T21:55",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV015463740000",
+    "rootId": "16126280",
+    "subType": "Feature Film",
+    "title": "The Croods: A New Age -- The IMAX 2D Experience",
+    "releaseYear": 2020,
+    "releaseDate": "2020-11-25",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy", "Adventure", "Animated", "Children"],
+    "audience": "Children",
+    "longDescription": "Searching for a safer habitat, the prehistoric Crood family discovers an idyllic, walled-in paradise that meets all of its needs. Unfortunately, they must also learn to live with the Bettermans -- a family that's a couple of steps above the Croods on the evolutionary ladder. As tensions between the new neighbors start to rise, a new threat soon propels both clans on an epic adventure that forces them to embrace their differences, draw strength from one another, and survive together.",
+    "shortDescription": "The prehistoric Crood family must learn to live with an advanced clan in an idyllic paradise.",
+    "topCast": ["Nicolas Cage", "Emma Stone", "Ryan Reynolds"],
+    "directors": ["Joel Crawford"],
+    "officialUrl": "https://www.universalpictures.com/movies/the-croods-2",
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG" }
+    ],
+    "advisories": ["Adult Situations"],
+    "runTime": "PT01H35M",
+    "animation": "Animated",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p16126280_v_v5_aa.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T12:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207603&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T14:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207603&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T17:15",
+        "quals": "Closed Captioned|Descriptive Video Services|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207603&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T19:45",
+        "quals": "Closed Captioned|Descriptive Video Services|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207603&d=2020-11-26"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV009399060000",
+    "rootId": "13370112",
+    "subType": "Feature Film",
+    "title": "The War With Grandpa",
+    "releaseYear": 2020,
+    "releaseDate": "2020-10-07",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy"],
+    "longDescription": "Peter and his grandpa used to be very close, but when Grandpa Jack moves in with the family, Peter is forced to give up his most prized possession: his bedroom. Peter will stop at nothing to get his room back, scheming with friends to devise a series of pranks to drive him out. However, grandpa doesn't give up easily, and it turns into an all-out war between the two.",
+    "shortDescription": "A scheming boy devises a series of outrageous pranks to win back his room from his grandfather.",
+    "topCast": ["Robert De Niro", "Uma Thurman", "Rob Riggle"],
+    "directors": ["Tim Hill"],
+    "officialUrl": "https://www.warwithgrandpa.com/",
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H34M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p13370112_v_v5_ad.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T12:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=167706&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T14:20",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=167706&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T17:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=167706&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T18:00",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=167706&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T19:25",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=167706&d=2020-11-26"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV002738300000",
+    "rootId": "8007536",
+    "subType": "Feature Film",
+    "title": "Frozen",
+    "releaseYear": 2010,
+    "releaseDate": "2010-01-24",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Thriller", "Horror"],
+    "longDescription": "As a winter storm approaches, three people become stranded on a chairlift high above the ground after a ski resort closes for the night.",
+    "shortDescription": "A ski resort shuts down for the night, accidentally stranding three people on a chairlift.",
+    "topCast": ["Emma Bell", "Shawn Ashmore", "Kevin Zegers"],
+    "directors": ["Adam Green"],
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "R" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H33M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p8007536_v_v5_am.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T12:05",
+        "quals": "Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=88286&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T15:05",
+        "quals": "Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=88286&d=2020-11-26"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV013072000000",
+    "rootId": "17395468",
+    "subType": "Feature Film",
+    "title": "Honest Thief",
+    "releaseYear": 2020,
+    "releaseDate": "2020-09-09",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Action", "Thriller"],
+    "longDescription": "Hoping to cut a deal, a professional bank robber agrees to return all the money he stole in exchange for a reduced sentence. But when two FBI agents set him up for murder, he must now go on the run to clear his name and bring them to justice.",
+    "shortDescription": "A professional bank robber goes on the run to clear his name and bring two crooked cops to justice.",
+    "topCast": ["Liam Neeson", "Kate Walsh", "Robert Patrick"],
+    "directors": ["Mark Williams"],
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG-13" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT01H39M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": { "content": "Honest Thief (2020)", "lang": "en" },
+      "uri": "assets/p17395468_p_v5_aa.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T12:35",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=201248&d=2020-11-26"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV013584170000",
+    "rootId": "17721980",
+    "subType": "Feature Film",
+    "title": "Let Him Go",
+    "releaseYear": 2020,
+    "releaseDate": "2020-09-09",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Thriller", "Western"],
+    "longDescription": "Following the loss of their son, a retired sheriff and his wife leave their Montana ranch to rescue their young grandson from the clutches of a dangerous family living off the grid in the Dakotas.",
+    "shortDescription": "An ex-sheriff and his wife must rescue their grandson from a dangerous family living off the grid.",
+    "topCast": ["Diane Lane", "Kevin Costner", "Kayli Carter"],
+    "directors": ["Thomas Bezucha"],
+    "officialUrl": "https://www.focusfeatures.com/let-him-go/",
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "R" }
+    ],
+    "advisories": ["Adult Situations", "Violence"],
+    "runTime": "PT01H54M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p17721980_v_v5_aa.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T13:20",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=203752&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T16:20",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=203752&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T19:20",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=203752&d=2020-11-26"
+      }
+    ]
+  },
+  {
+    "tmsId": "MV015335500000",
+    "rootId": "18965213",
+    "subType": "Feature Film",
+    "title": "Vanguard",
+    "releaseYear": 2020,
+    "releaseDate": "2020-11-20",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Action", "Thriller"],
+    "longDescription": "Members of a covert security company try to protect an accountant from the world's deadliest mercenary organization.",
+    "shortDescription": "Members of a covert security company try to protect an accountant from deadly mercenaries.",
+    "topCast": ["Jackie Chan", "Yang Yang", "Ai Lun"],
+    "directors": ["Stanley Tong"],
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG-13" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H48M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "caption": { "content": "Vanguard (2020)", "lang": "en" },
+      "uri": "assets/p18965213_p_v5_ab.jpg",
+      "category": "Poster Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T15:00",
+        "quals": "Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207254&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T17:40",
+        "quals": "Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207254&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T20:20",
+        "quals": "Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=207254&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T14:15",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T16:55",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T22:15",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV013942100000",
+    "rootId": "18082622",
+    "subType": "Feature Film",
+    "title": "Come Play",
+    "releaseYear": 2020,
+    "releaseDate": "2020-10-30",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Horror", "Thriller"],
+    "longDescription": "Parents fight to save their son when a mysterious creature uses his electronic devices to break into our world.",
+    "shortDescription": "A mysterious creature uses a lonely boy's electronic devices to break into our world.",
+    "topCast": ["Azhy Robertson", "Gillian Jacobs", "John Gallagher"],
+    "directors": ["Jacob Chase"],
+    "officialUrl": "https://www.focusfeatures.com/come-play",
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG-13" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations"],
+    "runTime": "PT01H36M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p18082622_v_v5_ag.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T15:25",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=205740&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T18:05",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=205740&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "5320", "name": "AMC Barton Creek Square 14" },
+        "dateTime": "2020-11-26T20:30",
+        "quals": "Closed Captioned|Descriptive Video Services|Recliners|Reserved Seating",
+        "barg": false,
+        "ticketURI": "http://www.fandango.com/tms.asp?t=AANCC&m=205740&d=2020-11-26"
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T14:25",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T21:50",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "EV000000226201",
+    "rootId": "169331",
+    "subType": "Theatre Event",
+    "title": "No Films Showing Today",
+    "titleLang": "en",
+    "entityType": "Movie",
+    "preferredImage": { "uri": "tvbanners/generic/generic_tvbanners_v5.png" },
+    "showtimes": [
+      {
+        "theatre": { "id": "8298", "name": "Regal Westgate Stadium 11" },
+        "dateTime": "2020-11-26T12:00",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV005014500000",
+    "rootId": "10108283",
+    "subType": "Feature Film",
+    "title": "Guardians of the Galaxy",
+    "releaseYear": 2014,
+    "releaseDate": "2014-07-31",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Science fiction", "Adventure", "Action", "Fantasy", "Comedy"],
+    "longDescription": "Brash space adventurer Peter Quill (Chris Pratt) finds himself the quarry of relentless bounty hunters after he steals an orb coveted by Ronan, a powerful villain. To evade Ronan, Quill is forced into an uneasy truce with four disparate misfits: gun-toting Rocket Raccoon, treelike-humanoid Groot, enigmatic Gamora, and vengeance-driven Drax the Destroyer. But when he discovers the orb's true power and the cosmic threat it poses, Quill must rally his ragtag group to save the universe.",
+    "shortDescription": "An adventurer (Chris Pratt) must unite four disparate misfits against a cosmic threat.",
+    "topCast": ["Chris Pratt", "Zoe Saldana", "Dave Bautista"],
+    "directors": ["James Gunn"],
+    "officialUrl": "http://marvel.com/guardians",
+    "qualityRating": { "ratingsBody": "TMS", "value": "3" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG-13" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations", "Violence"],
+    "runTime": "PT02H01M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p10108283_v_v5_aj.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T14:00",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T19:25",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV013950090000",
+    "rootId": "18091706",
+    "subType": "Feature Film",
+    "title": "The Last Vermeer",
+    "releaseYear": 2019,
+    "releaseDate": "2019-08-31",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Drama"],
+    "longDescription": "A soldier investigates a renowned Dutch artist who is accused of conspiring with the Nazis.",
+    "shortDescription": "A soldier investigates a renowned Dutch artist who is accused of conspiring with the Nazis.",
+    "topCast": ["Guy Pearce", "Claes Bang", "August Diehl"],
+    "directors": ["Dan Friedkin"],
+    "officialUrl": "https://www.sonypictures.com/movies/thelastvermeer",
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "R" }
+    ],
+    "advisories": ["Adult Language", "Adult Situations", "Nudity", "Violence"],
+    "runTime": "PT01H57M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p18091706_i_v5_aa.jpg",
+      "category": "Iconic",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T16:40",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T19:30",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T22:15",
+        "quals": "No Passes|Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV001669860000",
+    "rootId": "16198",
+    "subType": "Feature Film",
+    "title": "The Santa Clause",
+    "releaseYear": 1994,
+    "releaseDate": "1994-11-11",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Comedy", "Children", "Holiday"],
+    "audience": "Children",
+    "longDescription": "Divorced dad Scott (Tim Allen) has custody of his son (Eric Lloyd) on Christmas Eve. After he accidentally kills a man in a Santa suit, they are magically transported to the North Pole, where an elf explains that Scott must take Santa's place before the next Christmas arrives. Scott thinks he's dreaming, but over the next several months he gains weight and grows an inexplicably white beard. Maybe that night at the North Pole wasn't a dream after all -- and maybe Scott has a lot of work to do.",
+    "shortDescription": "An adman takes over for the bearded, big-bellied fellow after a rooftop mishap on Christmas Eve.",
+    "topCast": ["Tim Allen", "Judge Reinhold", "Wendy Crewson"],
+    "directors": ["John Pasquin"],
+    "qualityRating": { "ratingsBody": "TMS", "value": "3" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG" }
+    ],
+    "advisories": ["Adult Situations"],
+    "runTime": "PT01H37M",
+    "holiday": "Christmas",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p16198_v_v5_bc.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T16:50",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T19:20",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV004885240000",
+    "rootId": "9991822",
+    "subType": "Feature Film",
+    "title": "Frozen",
+    "releaseYear": 2013,
+    "releaseDate": "2013-11-20",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": [
+      "Musical comedy",
+      "Adventure",
+      "Fantasy",
+      "Animated",
+      "Children"
+    ],
+    "audience": "Children",
+    "longDescription": "When their kingdom becomes trapped in perpetual winter, fearless Anna (Kristen Bell) joins forces with mountaineer Kristoff (Jonathan Groff) and his reindeer sidekick to find Anna's sister, Snow Queen Elsa (Idina Menzel), and break her icy spell. Although their epic journey leads them to encounters with mystical trolls, a comedic snowman (Josh Gad), harsh conditions, and magic at every turn, Anna and Kristoff bravely push onward in a race to save their kingdom from winter's cold grip.",
+    "shortDescription": "A fearless princess and a mountaineer set out to free their kingdom from eternal winter.",
+    "topCast": ["Kristen Bell", "Idina Menzel", "Jonathan Groff"],
+    "directors": ["Chris Buck", "Jennifer Lee"],
+    "officialUrl": "http://movies.disney.com/frozen/?cmp=wdsmp_fro_url_dcomfrozen_Extl",
+    "qualityRating": { "ratingsBody": "TMS", "value": "3.5" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "PG" }
+    ],
+    "advisories": ["Adult Situations"],
+    "runTime": "PT01H42M",
+    "animation": "Animated",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p9991822_v_v5_bb.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T16:50",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      },
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T22:00",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  },
+  {
+    "tmsId": "MV001957140000",
+    "rootId": "159405",
+    "subType": "Feature Film",
+    "title": "American Gangster",
+    "releaseYear": 2007,
+    "releaseDate": "2007-11-02",
+    "titleLang": "en",
+    "descriptionLang": "en",
+    "entityType": "Movie",
+    "genres": ["Crime drama", "Biography"],
+    "longDescription": "Frank Lucas (Denzel Washington) earns his living as a chauffeur to one of Harlem's leading mobsters. After his boss dies, Frank uses his own ingenuity and strict business code to become one of the inner city's most powerful crime bosses. Meanwhile, veteran cop Richie Roberts (Russell Crowe) senses a change in the mob's power structure and looks for ways to bring his opponent to justice.",
+    "shortDescription": "A chauffeur (Denzel Washington) rises to prominence as the most-powerful crime boss in 1970s Harlem.",
+    "topCast": ["Denzel Washington", "Russell Crowe", "Chiwetel Ejiofor"],
+    "directors": ["Ridley Scott"],
+    "officialUrl": "http://www.americangangster.net/",
+    "qualityRating": { "ratingsBody": "TMS", "value": "3" },
+    "ratings": [
+      { "body": "Motion Picture Association of America", "code": "R" }
+    ],
+    "advisories": [
+      "Adult Language",
+      "Adult Situations",
+      "Graphic Violence",
+      "Nudity"
+    ],
+    "runTime": "PT02H37M",
+    "preferredImage": {
+      "width": "240",
+      "height": "360",
+      "uri": "assets/p159405_v_v5_ai.jpg",
+      "category": "VOD Art",
+      "text": "yes",
+      "primary": "true"
+    },
+    "showtimes": [
+      {
+        "theatre": { "id": "8749", "name": "Galaxy Highland" },
+        "dateTime": "2020-11-26T17:45",
+        "quals": "Hearing Impaired|Descriptive Audio Services",
+        "barg": false
+      }
+    ]
+  }
+]
+
