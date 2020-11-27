@@ -27,7 +27,6 @@ dbSession = Session()
 
 
 def do_endpoint_mock():
-    """do_endpoint_mock returns mock data on api calls"""
     adapter = requests_mock.Adapter()
     session.mount('mock://', adapter)
 
@@ -54,8 +53,6 @@ def get_genre_or_create(genre_name):
 def get_showings(api_secret, start_date, zip_code):
     endpoint = SHOWINGS_ENDPOINT_FMT.format(start_date, zip_code, api_secret)
     resp = session.get(endpoint)
-    # resp = session.get("mock://test.com/showings") -> uncomment to use mock data
-
     if not resp.ok:
         raise Exception(resp.text)
 
@@ -94,8 +91,6 @@ def get_airings(api_secret, start_datetime, line_up_id):
         start_datetime, line_up_id, api_secret)
 
     resp = session.get(endpoint)
-    # resp = session.get("mock://test.com/airings") -> uncomment to use mock data
-
     if not resp.ok:
         raise Exception(resp.text)
 
@@ -187,15 +182,13 @@ def get_top_genres(count):
 
 if __name__ == '__main__':
     """
-    #By default, pandas truncates large data at the terminal, 
-    #prevent that behaviour by uncommenting these
-
+    # By default, pandas truncates large data, prevent that behaviour with these
     pd.set_option('display.max_rows', None)
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
     pd.set_option('display.max_colwidth', -1)
     """
 
-    poll_data()  # replace with do_endpoint_mock() to use mock data
+    poll_data()
     top_genre_movies = get_top_genres(5)
     print(top_genre_movies)
