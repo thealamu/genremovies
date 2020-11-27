@@ -37,6 +37,19 @@ def do_endpoint_mock():
                          text=open("./tmp/airings.json", "r").read())
 
 
+def get_genre_or_create(genre_name):
+    """get_genre_or_create returns a genre reference or creates one if it does not exist"""
+
+    genre = dbSession.query(Genre).filter(Genre.name == genre_name).first()
+
+    if genre:
+        return genre
+
+    genre = Genre(name=genre_name)
+    dbSession.add(genre)
+    return genre
+
+
 def get_showings(api_secret, start_date, zip_code):
     endpoint = SHOWINGS_ENDPOINT_FMT.format(start_date, zip_code, api_secret)
     resp = session.get(endpoint)
@@ -52,9 +65,12 @@ def get_showings(api_secret, start_date, zip_code):
         theatre_movie.title = showing.get("title", "")
         theatre_movie.releaseYear = showing.get("releaseYear", "")
         theatre_movie.description = showing.get("shortDescription", "")
-        theatre_movie.genres = []
+
+        # add this movie to genres using backrefs
         for genre_name in showing.get("genres", []):
-            theatre_movie.genres.append(get_genre(genre_name))
+            # get a reference to the genre
+            genre = dbSession.query(Genre).filter(Genre.name=genre_name)
+            genre.theatre_movies.append(theatre_movie)
 
         theatre_movie.theatres = []
         for showtime in showing.get("showtimes", []):
