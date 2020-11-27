@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import json
+import datetime
 import requests
 import requests_mock
 from os import environ
@@ -27,7 +28,11 @@ def do_endpoint_mock():
 
 
 def get_showings(api_secret, start_date, zip_code):
-    resp = session.get("mock://test.com/showings")
+    endpoint = SHOWINGS_ENDPOINT_FMT.format(start_date, zip_code, api_secret)
+    resp = session.get(endpoint)
+    if not resp.ok:
+        raise Exception(resp.text)
+
     showings = json.loads(resp.text)
 
     theatre_movies = []
@@ -56,7 +61,12 @@ def get_showings(api_secret, start_date, zip_code):
 
 
 def get_airings(api_secret, start_datetime, line_up_id):
-    resp = session.get("mock://test.com/airings")
+    endpoint = AIRINGS_ENDPOINT_FMT.format(
+        start_datetime, line_up_id, api_secret)
+    resp = session.get(endpoint)
+    if not resp.ok:
+        raise Exception(resp.text)
+
     airings = json.loads(resp.text)
 
     tv_movies = []
@@ -84,8 +94,17 @@ def get_airings(api_secret, start_datetime, line_up_id):
 
 
 def get_data():
-    get_showings("", "", "")
-    get_airings("", "", "")
+    api_secret = environ.get('API_SECRET')
+    get_showings(api_secret, get_date(), "78701")
+    get_airings(api_secret, get_date_time(), "USA-TX42500-X")
+
+
+def get_date():
+    return datetime.datetime.today().strftime('%Y-%m-%d')
+
+
+def get_date_time():
+    return datetime.datetime.now().strftime("%Y-%m-%dT%H:%Mz")
 
 
 if __name__ == '__main__':
