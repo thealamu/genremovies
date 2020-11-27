@@ -8,7 +8,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import *
-
+import pandas as pd
 
 SHOWINGS_ENDPOINT_FMT = "https://data.tmsapi.com/v1.1/movies/showings?startDate={0}&zip={1}&api_key={2}"
 AIRINGS_ENDPOINT_FMT = "http://data.tmsapi.com/v1.1/movies/airings?startDateTime={0}&lineupId={1}&api_key={2}"
@@ -17,7 +17,7 @@ session = requests.Session()
 
 # Create engine
 db_uri = environ.get('SQLALCHEMY_DATABASE_URI')
-engine = create_engine(db_uri, echo=True)
+engine = create_engine(db_uri, echo=False)
 
 # Create All Tables
 Base.metadata.create_all(engine)
@@ -141,12 +141,40 @@ def get_top_genres():
     # get all genres
     genres = dbSession.query(Genre).all()
 
+    df_theatre_movie = pd.DataFrame(
+        columns=["title", "genre", "releaseYear", "description"])
+
+    df_tv_movie = pd.DataFrame(
+        columns=["title", "genre", "releaseYear", "description"])
+
+    # Fill the dataframes
     for genre in genres:
-        print(genre)
-        print(genre.theatre_movies)
-        break
+        for theatre_movie in genre.theatre_movies:
+            df_theatre_movie = df_theatre_movie.append({
+                "title": theatre_movie.title,
+                "genre": genre.name,
+                "releaseYear": theatre_movie.releaseYear,
+                "description": theatre_movie.description
+            }, ignore_index=True)
+
+        for tv_movie in genre.tv_movies:
+            df_tv_movie = df_tv_movie.append({
+                "title": tv_movie.title,
+                "genre": genre.name,
+                "releaseYear": tv_movie.releaseYear,
+                "description": tv_movie.description
+            }, ignore_index=True)
+
+    merged_movies = pd.concat([df_theatre_movie, df_tv_movie])
+
+    # Group by genre
+    grouped = merged_movies.groupby("genre")
+    print(grouped['title'])
+
+    # Get the top 5 groups
+    # top5groups =
 
 
 if __name__ == '__main__':
-    get_data()
+    # get_data()
     get_top_genres()
