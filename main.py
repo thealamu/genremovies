@@ -31,10 +31,10 @@ def do_endpoint_mock():
     session.mount('mock://', adapter)
 
     adapter.register_uri("GET", "mock://test.com/showings",
-                         text=open("./tmp/showings.json", "r").read())
+                         text=open("./mock/showings.json", "r").read())
 
     adapter.register_uri("GET", "mock://test.com/airings",
-                         text=open("./tmp/airings.json", "r").read())
+                         text=open("./mock/airings.json", "r").read())
 
 
 def get_genre_or_create(genre_name):
@@ -123,7 +123,7 @@ def get_airings(api_secret, start_datetime, line_up_id):
     dbSession.commit()
 
 
-def get_data():
+def poll_data():
     api_secret = environ.get('API_SECRET')
     get_showings(api_secret, get_date(), "78701")
     get_airings(api_secret, get_date_time(), "USA-TX42500-X")
@@ -137,7 +137,7 @@ def get_date_time():
     return datetime.datetime.now().strftime("%Y-%m-%dT%H:%Mz")
 
 
-def get_top_genres():
+def get_top_genres(count):
     # get all genres
     genres = dbSession.query(Genre).all()
 
@@ -169,12 +169,26 @@ def get_top_genres():
 
     # Group by genre
     grouped = merged_movies.groupby("genre")
-    print(grouped['title'])
 
-    # Get the top 5 groups
-    # top5groups =
+    top_labels = grouped.size().nlargest(count).index
+
+    top_genre_movies = []
+    for label in top_labels:
+        movies_under_genre = merged_movies[merged_movies.genre == label]
+        top_genre_movies.append({label: movies_under_genre})
+
+    return top_genre_movies
 
 
 if __name__ == '__main__':
-    # get_data()
-    get_top_genres()
+    """
+    # By default, pandas truncates large data, prevent that behaviour with these
+    pd.set_option('display.max_rows', None)
+    pd.set_option('display.max_columns', None)
+    pd.set_option('display.width', None)
+    pd.set_option('display.max_colwidth', -1)
+    """
+
+    poll_data()
+    top_genre_movies = get_top_genres(5)
+    print(top_genre_movies)
