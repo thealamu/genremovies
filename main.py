@@ -36,7 +36,7 @@ def get_showings(api_secret, start_date, zip_code):
         theatre_movie = TheatreMovie()
         theatre_movie.title = showing.get("title", "")
         theatre_movie.releaseYear = showing.get("releaseYear", "")
-        theatre_movie.description = showing.get("shortDescription")
+        theatre_movie.description = showing.get("shortDescription", "")
         theatre_movie.genres = []
         for genre_name in showing.get("genres", []):
             theatre_movie.genres.append(Genre(name=genre_name))
@@ -58,7 +58,29 @@ def get_showings(api_secret, start_date, zip_code):
 def get_airings(api_secret, start_datetime, line_up_id):
     resp = session.get("mock://test.com/airings")
     airings = json.loads(resp.text)
-    print(len(airings))
+
+    tv_movies = []
+
+    for airing in airings:
+        tv_movie = TvMovie()
+        program = airing.get("program", None)
+        if not program:
+            continue
+        tv_movie.title = program.get("title", "")
+        tv_movie.releaseYear = program.get("releaseYear", "")
+        tv_movie.description = program.get("shortDescription", "")
+        tv_movie.genres = []
+        for genre_name in program.get("genres", []):
+            tv_movie.genres.append(Genre(name=genre_name))
+
+        tv_movie.channels = []
+        for channel_name in program.get("channels", []):
+            tv_movie.channels.append(Channel(name=channel_name))
+
+        tv_movies.append(tv_movie)
+
+    dbSession.add_all(tv_movies)
+    dbSession.commit()
 
 
 def get_data():

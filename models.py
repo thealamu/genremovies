@@ -7,7 +7,7 @@ Base = declarative_base()
 tmg_association_table = Table('theatre_movie_genre_association', Base.metadata,
                               Column('movie_id', Integer,
                                      ForeignKey('theatre_movies.id')),
-                              Column('genre_id', String,
+                              Column('genre_id', Integer,
                                      ForeignKey('genres.id'))
                               )
 
@@ -21,7 +21,7 @@ tth_association_table = Table('theatre_movie_theatre_association', Base.metadata
 amg_association_table = Table('tv_movie_genre_association', Base.metadata,
                               Column('movie_id', Integer,
                                      ForeignKey('tv_movies.id')),
-                              Column('genre_id', String,
+                              Column('genre_id', Integer,
                                      ForeignKey('genres.id'))
                               )
 
@@ -29,8 +29,8 @@ amg_association_table = Table('tv_movie_genre_association', Base.metadata,
 ttv_association_table = Table('tv_movie_channel_association', Base.metadata,
                               Column('movie_id', Integer,
                                      ForeignKey('tv_movies.id')),
-                              Column('channel_id', String,
-                                     ForeignKey('channels.name'))
+                              Column('channel_id', Integer,
+                                     ForeignKey('channels.id'))
                               )
 
 
@@ -99,9 +99,13 @@ class Theatre(Base):
 class Channel(Base):
     __tablename__ = "channels"
 
-    name = Column(
-        String(32),
+    id = Column(
+        Integer,
         primary_key=True
+    )
+
+    name = Column(
+        String(32)
     )
 
     def __repr__(self):
@@ -112,12 +116,12 @@ class TheatreMovie(Movie, Base):
     __tablename__ = "theatre_movies"
 
     theatre_id = Column(
-        String,
+        Integer,
         ForeignKey("theatres.id")
     )
 
     genre_id = Column(
-        String,
+        Integer,
         ForeignKey('genres.id')
     )
 
@@ -132,12 +136,12 @@ class TvMovie(Movie, Base):
     __tablename__ = "tv_movies"
 
     channel_id = Column(
-        String,
-        ForeignKey("channels.name")
+        Integer,
+        ForeignKey("channels.id")
     )
 
     genre_id = Column(
-        String,
+        Integer,
         ForeignKey('genres.id')
     )
 
